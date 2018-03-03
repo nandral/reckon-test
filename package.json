@@ -1,0 +1,31 @@
+{
+  "name": "reckon-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=9999 node index.js",
+    "dev": "NODE_ENV=development PORT=9999 nodemon --watch . index.js",
+    "test": "NODE_ENV=test PORT=6000 mocha  --timeout 2000 'test/**/*.test.js' --exit",
+    "coverage": "PORT=7000 istanbul cover node_modules/.bin/_mocha -- test/**/* --timeout 2000 --exit "
+  },
+  "engines": {
+    "node": "9.6.1",
+    "npm": "5.6.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "express": "^4.16.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "supertest": "^3.0.0"
+  }
+}
