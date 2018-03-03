@@ -1,9 +1,9 @@
 const PORT = process.env.PORT || 9999;
 const express = require("express");
 const bodyParser = require("body-parser");
-const inboundService = require("./api/inboundServiceTest1");
-const divisionService = require("./api/divisionService");
-const findPatterns = require("./api/findPatternsTest2");
+const inboundService = require("./src/inboundServiceTest1");
+const divisionService = require("./src/divisionService");
+const findPatterns = require("./src/findPatternsTest2");
 
 const app = express();
 app.use(bodyParser.json());
